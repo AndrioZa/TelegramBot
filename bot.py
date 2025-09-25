@@ -1,3 +1,13 @@
+import os
+from telegram.ext import ApplicationBuilder
+
+# Берём токен из переменной окружения Render
+telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+
+# Создаём приложение
+app = ApplicationBuilder().token(telegram_bot_token).build()
+
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 import os
