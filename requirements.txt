@@ -1,2 +1,4 @@
 python-telegram-bot==20.3
-tzdata
+python-dotenv==1.0.0
+openai==0.28.0
+
